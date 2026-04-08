@@ -1,11 +1,36 @@
-<div align="center">
+# Nexus Core AI - Local Setup
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+Ten projekt został wyeksportowany z Google AI Studio Build.
 
-  <h1>Built with AI Studio</h2>
+## Wymagania
+- Node.js (v18 lub nowszy)
+- npm lub yarn
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+## Instalacja
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
+1. Rozpakuj pobrany plik ZIP.
+2. Otwórz terminal w folderze projektu.
+3. Zainstaluj zależności:
+   ```bash
+   npm install
+   ```
 
-</div>
+## Konfiguracja
+Utwórz plik `.env` w głównym katalogu i dodaj swój klucz API Gemini:
+```env
+GEMINI_API_KEY=twój_klucz_api
+```
+
+## Uruchamianie
+
+Aby uruchomić serwer deweloperski:
+```bash
+npm run dev
+```
+Aplikacja będzie dostępna pod adresem `http://localhost:3000`.
+
+## Budowanie do produkcji
+```bash
+npm run build
+```
+Pliki wynikowe znajdą się w folderze `dist/`.
